@@ -16,10 +16,11 @@ class Recursion
      */
 public:
     void test_Recursion();
-    int factorial(int n);
-    int fibonacci(int n);
-    void hanota(vector<int>& A, vector<int>& B, vector<int>& C, int n);
+    int Factorial(int n);
+    int Fibonacci(int n);
+    void Hanota(vector<int>& A, vector<int>& B, vector<int>& C, int n);
     int BinarySearch(int a[], int x, int n);
+    void QuickSort(int a[], int left, int right);
 };
 
 
