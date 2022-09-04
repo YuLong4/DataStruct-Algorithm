@@ -6,6 +6,7 @@
 #define RECURSION_RECURSION_H
 #include <iostream>
 using namespace std;
+#include <vector>
 
 class Recursion
 {
@@ -16,7 +17,7 @@ public:
     void test_Recursion();
     int factorial(int n);
     int fibonacci(int n);
-
+    void hanota(vector<int>& A, vector<int>& B, vector<int>& C, int n);
 };
 
 
