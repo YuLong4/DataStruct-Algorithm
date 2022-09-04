@@ -9,8 +9,17 @@
  */
 void Recursion::test_Recursion()
 {
+    /*
+     * Function:factorial
+     * 测试阶乘函数
+     */
     cout<<"执行函数:"<< "factorial:" <<endl;
     cout<<"5的阶乘:"<<factorial(5) <<endl;
+
+    /*
+     * Function:fibonacci
+     * 测试fibonacci函数
+     */
     cout<<"\n执行函数:"<< "fibonacci:" <<endl;
     cout<<"前20个Fibonacci数:"<<endl;
     for(int i=0;i<20;i++)
@@ -18,8 +27,12 @@ void Recursion::test_Recursion()
         cout<<fibonacci(i)<<" ";
     }
     cout<<endl;
-    cout<<"\n执行函数:"<< "hanota:" <<endl;
 
+    /*
+     * Function:hanota
+     * 测试hanota函数
+     */
+    cout<<"\n执行函数:"<< "hanota:" <<endl;
     vector<int> A = {5,4,3,2,1}, B, C;
     cout<<"初始数据:"<<endl;
     cout<<"A:";
@@ -36,6 +49,19 @@ void Recursion::test_Recursion()
     for(int i : B) cout<<i<<" ";
     cout<<"\nC:";
     for(int i : C) cout<<i<<" ";
+    cout<<endl;
+
+    /*
+     * Function:BinarySearch
+     * 测试二分查找
+     */
+    int a[10] = {1, 23, 42, 56, 78, 89, 100, 140, 150, 560};
+    int res= BinarySearch(a, 56, 10);
+    if(res!=-1)
+    {
+        cout<<"找到了x，位置（下标）为："<<res<<endl;
+    }
+    else cout<<"未找到"<<endl;
 }
 
 /*
@@ -82,6 +108,28 @@ void Recursion::hanota(vector<int> &A, vector<int> &B, vector<int> &C, int n)
     hanota(A, B, C, 1);
     hanota(B, A, C, n-1);
 
+}
+
+/*
+ * 分治法:
+ * 二分查找
+ * 三个参数分别为：查找数组、查找值、数组长度
+ * 找到x时返回其在数组中的位置(下标), 未找到返回0
+ */
+int Recursion::BinarySearch(int a[], int x, int n)
+{
+    int left= 0, right= n-1;
+    while(left<= right)
+    {
+        int middle= (left+right)/2;
+        if(x == a[middle])
+            return middle;
+        if(x > a[middle])
+            left= middle+1;
+        else
+            right= middle-1;
+    }
+    return -1;
 }
 
 
