@@ -128,6 +128,30 @@ recursion/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/build
 .PHONY : recursion/fast
 
+LinkList.obj: LinkList.cpp.obj
+.PHONY : LinkList.obj
+
+# target to build an object file
+LinkList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/LinkList.cpp.obj
+.PHONY : LinkList.cpp.obj
+
+LinkList.i: LinkList.cpp.i
+.PHONY : LinkList.i
+
+# target to preprocess a source file
+LinkList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/LinkList.cpp.i
+.PHONY : LinkList.cpp.i
+
+LinkList.s: LinkList.cpp.s
+.PHONY : LinkList.s
+
+# target to generate assembly for a file
+LinkList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/LinkList.cpp.s
+.PHONY : LinkList.cpp.s
+
 Recursion.obj: Recursion.cpp.obj
 .PHONY : Recursion.obj
 
@@ -185,6 +209,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... recursion
+	@echo ... LinkList.obj
+	@echo ... LinkList.i
+	@echo ... LinkList.s
 	@echo ... Recursion.obj
 	@echo ... Recursion.i
 	@echo ... Recursion.s

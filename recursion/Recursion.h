@@ -12,7 +12,7 @@ class Recursion
 {
     /*
      * 递归方法实现基本算法
-     * 阶乘、Fibonacci数列、汉诺塔问题
+     * 阶乘、Fibonacci数列、汉诺塔问题、二分查找、快速排序
      */
 public:
     void test_Recursion();
