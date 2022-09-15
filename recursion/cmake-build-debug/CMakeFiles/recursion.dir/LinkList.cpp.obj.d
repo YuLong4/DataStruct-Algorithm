@@ -1,5 +1,6 @@
-CMakeFiles/recursion.dir/main.cpp.obj: \
- F:\1_Home\1_prjs\localRepository\DataStruct-Algorithm\recursion\main.cpp \
+CMakeFiles/recursion.dir/LinkList.cpp.obj: \
+ F:\1_Home\1_prjs\localRepository\DataStruct-Algorithm\recursion\LinkList.cpp \
+ F:\1_Home\1_prjs\localRepository\DataStruct-Algorithm\recursion\LinkList.h \
  F:/2_MyApp/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
  F:/2_MyApp/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  F:/2_MyApp/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
@@ -134,11 +135,4 @@ CMakeFiles/recursion.dir/main.cpp.obj: \
  F:/2_MyApp/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc \
  F:/2_MyApp/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
  F:/2_MyApp/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
- F:/2_MyApp/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
- F:\1_Home\1_prjs\localRepository\DataStruct-Algorithm\recursion\Recursion.h \
- F:/2_MyApp/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/vector \
- F:/2_MyApp/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_uninitialized.h \
- F:/2_MyApp/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_vector.h \
- F:/2_MyApp/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_bvector.h \
- F:/2_MyApp/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc \
- F:\1_Home\1_prjs\localRepository\DataStruct-Algorithm\recursion\LinkList.h
+ F:/2_MyApp/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc

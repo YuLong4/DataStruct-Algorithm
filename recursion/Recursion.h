@@ -21,6 +21,7 @@ public:
     void Hanota(vector<int>& A, vector<int>& B, vector<int>& C, int n);
     int BinarySearch(int a[], int x, int n);
     void QuickSort(int a[], int left, int right);
+    void RotateArray(vector<int>& nums, int k);
 };
 
 

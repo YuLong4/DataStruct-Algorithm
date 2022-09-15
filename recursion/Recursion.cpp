@@ -79,7 +79,21 @@ void Recursion::test_Recursion()
     QuickSort(b, 0, 9);
     cout<<"\n快速排序后:";
     for(int i: b) cout<<i<<" ";
+    cout<<endl;
 
+
+    /*
+     * 测试轮转数组函数
+     */
+    vector<int> nums={1,2,3,4,5,6,7};
+    int k=4;
+    cout<<"\n原数组为:";
+    for(int i: nums) cout<<i<<" ";
+    cout<<endl;
+    RotateArray(nums, k);
+    cout<<"循环右移4位后:";
+    for(int i: nums) cout<<i<<" ";
+    cout<<endl;
 }
 
 /*
@@ -172,6 +186,28 @@ void Recursion::QuickSort(int a[], int left, int right)
     }
     QuickSort(a, left, j);
     QuickSort(a, j+1, right);
+}
+/*
+ * 循环右移数组；
+ * 如 1,2,3,4,5,6,7 循环右移4位变为 4,5,6,7,1,2,3
+ * 方法：
+ * 确定一个k值,即右移4次
+ * 首先写一个翻转数组的函数，进行3次翻转
+ * 1.将原数组整体翻转 2.0到k-1位翻转 3. k到n-1位翻转
+ */
+void reverse(vector<int>& nums, int begin, int end)
+{
+    while(begin<end)
+    {
+        swap(nums[begin++], nums[end--]);
+    }
+}
+void Recursion::RotateArray(vector<int>& nums, int k)
+{
+    int length = nums.size();
+    reverse(nums, 0, length-1);
+    reverse(nums, 0, k-1);
+    reverse(nums, k, length-1);
 }
 
 
